@@ -1,8 +1,8 @@
-﻿namespace TextElements.SimpleElements
+﻿namespace TextElements.ElementsWithInterface
 {
     internal class InvertedText : ITextElement
     {
-        private string _text;
+        private readonly string _text;
 
         public InvertedText(string text)
         {

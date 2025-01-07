@@ -1,4 +1,4 @@
-﻿namespace TextElements.SimpleElements
+﻿namespace TextElements.ElementsWithInterface
 {
     internal interface ITextElement
     {

@@ -1,8 +1,8 @@
-﻿namespace TextElements.SimpleElements
+﻿namespace TextElements.ElementsWithInterface
 {
     internal class BulletPoint : ITextElement
     {
-        private string _text;
+        private readonly string _text;
 
         public BulletPoint(string text)
         {

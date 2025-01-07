@@ -1,9 +1,9 @@
-﻿namespace TextElements.SimpleElements
+﻿namespace TextElements.ElementsWithInterface
 {
     internal class CenteredHeader : ITextElement
     {
-        private string _text;
-        private char _paddingChar;
+        private readonly string _text;
+        private readonly char _paddingChar;
 
         public CenteredHeader(string text, char paddingChar)
         {
