@@ -1,0 +1,11 @@
+Introduksjon til arv
+
+1. Skrive om TextElements
+2. Skrive om Stars
+3. Skrive om Todo
+
+Punkter vi må passe på å få forklart
+- virtual
+- forskjellen på protected og private
+- chaining av constructorer
+- abstract
