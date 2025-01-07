@@ -1,26 +1,17 @@
 ﻿namespace Todo
 {
-    internal class MarkTodoItemAsDoneCommand : ICommand
+    internal class MarkTodoItemAsDoneCommand : Command
     {
-        private readonly TodoList _todoList;
-        public string Name { get; }
-        public string MenuText { get; }
-
         public MarkTodoItemAsDoneCommand(TodoList todoList)
+        : base(todoList, "3", "Marker som gjort")
         {
-            _todoList = todoList;
-            Name = "3";
-            MenuText = "Marker som gjort";
         }
 
-        public void Run()
+        public override void Run()
         {
-            Console.Write("Hvilket nr vil du sette som utført? ");
-            var noStr = Console.ReadLine();
-            var no = Convert.ToInt32(noStr);
+            var no = AskForInt("Hvilket nr vil du sette som utført? ");
             var index = no - 1;
             _todoList.MarkAsDone(index);
         }
-
     }
 }

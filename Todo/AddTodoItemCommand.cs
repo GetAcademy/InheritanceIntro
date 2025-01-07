@@ -1,26 +1,17 @@
 ﻿namespace Todo
 {
-    internal class AddTodoItemCommand : ICommand
+    internal class AddTodoItemCommand : Command
     {
-        private readonly TodoList _todoList;
-        public string Name { get; }
-        public string MenuText { get; }
-
         public AddTodoItemCommand(TodoList todoList)
+        : base(todoList, "1", "Legg til")
         {
-            _todoList = todoList;
-            Name = "1";
-            MenuText = "Legg til";
         }
 
-        public void Run()
+        public override void Run()
         {
             Console.WriteLine("Legg til");
-            Console.Write("Hvor mange dager til fristen? ");
-            var daysToDeadlineStr = Console.ReadLine();
-            var daysToDeadLine = Convert.ToInt32(daysToDeadlineStr);
-            Console.Write("Hva skal gjøres? ");
-            var text = Console.ReadLine();
+            var daysToDeadLine = AskForInt("Hvor mange dager til fristen? ");
+            var text = Ask("Hva skal gjøres? ");
             var todoItem = new TodoItem(text, daysToDeadLine);
             _todoList.Add(todoItem);
         }

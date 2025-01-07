@@ -1,23 +1,15 @@
 ﻿namespace Todo
 {
-    internal class DeleteTodoItemCommand : ICommand
+    internal class DeleteTodoItemCommand : Command
     {
-        private readonly TodoList _todoList;
-        public string Name { get; }
-        public string MenuText { get; }
-
         public DeleteTodoItemCommand(TodoList todoList)
+        : base(todoList, "2", "Slett")
         {
-            _todoList = todoList;
-            Name = "2";
-            MenuText = "Slett";
         }
 
-        public void Run()
+        public override void Run()
         {
-            Console.Write("Hvilket nr vil du slette? ");
-            var noStr = Console.ReadLine();
-            var no = Convert.ToInt32(noStr);
+            var no = AskForInt("Hvilket nr vil du slette? ");
             var index = no - 1;
             _todoList.Delete(index);
         }
