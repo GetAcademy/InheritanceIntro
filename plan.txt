@@ -19,4 +19,5 @@ Punkter vi må passe på å få forklart
 - forskjellen på protected og private
 - chaining av constructorer
 - abstract
+- template method pattern => vis ut fra TextElements
 
