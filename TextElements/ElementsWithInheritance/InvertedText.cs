@@ -2,11 +2,8 @@
 {
     internal class InvertedText : TextElement
     {
-        private readonly string _text;
-
-        public InvertedText(string text)
+        public InvertedText(string text) : base(text)
         {
-            _text = text;
         }
 
         public override void Show()
@@ -15,7 +12,8 @@
             var backColor = Console.BackgroundColor;
             Console.ForegroundColor = backColor;
             Console.BackgroundColor = foreColor;
-            Console.WriteLine(_text);
+            base.Show();
+            Console.WriteLine();
             Console.ForegroundColor = foreColor;
             Console.BackgroundColor = backColor;
         }

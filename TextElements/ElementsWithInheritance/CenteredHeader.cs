@@ -2,13 +2,11 @@
 {
     internal class CenteredHeader : TextElement
     {
-        private readonly string _text;
         private readonly char _paddingChar;
 
-        public CenteredHeader(string text, char paddingChar)
+        public CenteredHeader(string text, char paddingChar) : base(text)
         {
             _paddingChar = paddingChar;
-            _text = text;
         }
 
         public override void Show()
@@ -17,7 +15,7 @@
             var padCount = startPos - 4;
             var padding = "  " + new string(_paddingChar, padCount) + "  ";
             Console.Write(padding);
-            Console.Write(_text);
+            base.Show();
             Console.WriteLine(padding);
         }
     }

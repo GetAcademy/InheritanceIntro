@@ -11,7 +11,7 @@
             _text = text;
         }
 
-        public override void Show()
+        public void Show()
         {
             var startPos = (Console.WindowWidth - _text.Length) / 2;
             var padCount = startPos - 4;
