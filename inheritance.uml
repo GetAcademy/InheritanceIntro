@@ -1,0 +1,21 @@
+class Discount 
+class PercentageDiscount
+class FixedAmountDiscount
+class BuyOneGetOneFreeDiscount
+
+Discount <|-- PercentageDiscount
+Discount <|-- FixedAmountDiscount
+Discount <|-- BuyOneGetOneFreeDiscount
+
+---
+
+class Weekplan 
+class GetAcademyWeekplan
+class StartItWeekplan
+
+Weekplan <|-- GetAcademyWeekplan
+GetAcademyWeekplan <|-- StartItWeekplan
+StartItWeekplan <|-- Emne1StartItWeekplan
+StartItWeekplan <|-- Emne2StartItWeekplan
+StartItWeekplan <|-- Emne3StartItWeekplan
+GetAcademyWeekplan <|-- GetItWeekplan

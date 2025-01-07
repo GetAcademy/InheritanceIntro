@@ -1,6 +1,6 @@
-﻿namespace TextElements.ElementsWithInterface
+﻿namespace TextElements.ElementsWithInheritance
 {
-    internal class CenteredHeader : ITextElement
+    internal class CenteredHeader : TextElement
     {
         private readonly string _text;
         private readonly char _paddingChar;

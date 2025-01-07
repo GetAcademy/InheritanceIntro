@@ -1,11 +1,22 @@
 Introduksjon til arv
 
-1. Skrive om TextElements
-2. Skrive om Stars
-3. Skrive om Todo
+1. Eksempler
+	- Fra WPF: Button og Label arver begge fra ContentControl
+	- Generell Notification vs EmailNotification, SmsNotification, PushNotification
+	- Discount: PercentageDiscount, FixedAmountDiscount, BuyOneGetOneFreeDiscount
+	- Ukene på Start IT
+	- Klassediagram i UML
+		class A 
+		class B 
+		A <|-- B
+
+2. Skrive om TextElements
+3. Skrive om Stars
+4. Skrive om Todo
 
 Punkter vi må passe på å få forklart
 - virtual
 - forskjellen på protected og private
 - chaining av constructorer
 - abstract
+
