@@ -1,4 +1,5 @@
 ﻿using Stars;
+using Stars.WithInterface;
 
 var star1 = new BlinkingStar(5, 5);
 var star2 = new MovingStar(1, 10);

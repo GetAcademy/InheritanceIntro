@@ -1,0 +1,16 @@
+Videre på arv
+
+1. Litt repetisjon fra sist, skrive om Stars
+
+2. Abstrakte klasser (abstract) 
+	- skal det være mulig å lage objekter av klassen TextElement eller ikke?
+	- abstrakt klasse vs interface
+	- generell vurdering
+		class VariantA : VariantB
+		vs
+		class VariantA : BaseClass og class VariantB : BaseClass
+
+3. Template method pattern
+	- TextElements.Show()
+	- 
+

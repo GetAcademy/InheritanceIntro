@@ -1,4 +1,4 @@
-﻿namespace Stars
+﻿namespace Stars.WithInterface
 {
     internal class MovingStar : IStar
     {
