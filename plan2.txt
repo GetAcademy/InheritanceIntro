@@ -15,6 +15,6 @@ Videre på arv
 	- Stars - både blinking og flytting
 
 4. Litt om veien videre
-	- https://roadmap.sh/
 	- https://github.com/emilybache/GildedRose-Refactoring-Kata
+	- https://roadmap.sh/
 
