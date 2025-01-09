@@ -6,11 +6,12 @@
         {
         }
 
-        public override void Show()
-        {
-            Console.Write(" * ");
-            base.Show();
-            Console.WriteLine();
-        }
+        
+        //public override void BeforeShow()
+        //{
+        //    Console.Write(" * ");
+        //    base.Show();
+        //    Console.WriteLine();
+        //}
     }
 }

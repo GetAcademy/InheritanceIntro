@@ -1,10 +1,11 @@
-﻿using Stars.WithInheritance;
+﻿using Stars.WithTemplateMethod;
 
-var star1 = new BlinkingStar(5, 5);
-var star2 = new MovingStar(1, 10);
-//var star3 = new Star(1, 10);
+var star1 = new BlinkingStar(1, 1);
+var star2 = new MovingStar(2, 2);
+var star3 = new Star(3, 3);
+var star4 = new BlinkingAndMovingStar(4,4);
 
-var stars = new Star[] { star1, star2 };
+var stars = new Star[] { star1, star2, star3, star4 };
 
 while (true)
 {

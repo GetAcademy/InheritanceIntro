@@ -1,4 +1,4 @@
-﻿using TextElements.ElementsWithInheritance;
+﻿using TextElements.ElementsWithTemplateMethod;
 
 var centeredHeader = new CenteredHeader("Hei", '*');
 var bulletPointA = new BulletPoint("a");
