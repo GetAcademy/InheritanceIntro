@@ -1,10 +1,10 @@
 ﻿namespace TextElements.ElementsWithInheritance
 {
-    internal class TextElement
+    internal abstract class TextElement
     {
         protected string _text;
 
-        public TextElement(string text)
+        protected TextElement(string text)
         {
             _text = text;
         }

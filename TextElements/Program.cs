@@ -7,10 +7,13 @@ var bulletPointC = new BulletPoint("c");
 var text = string.Concat(Enumerable.Repeat("Det var en gang. ", 22));
 var indentedParagraph = new IndentedParagraph(text);
 var invertedText = new InvertedText("Terje");
+var text2 = new SimpleText("Terje");
+
+//new TextElement()
 
 var textElements = new TextElement[]
 {
-    centeredHeader, bulletPointA, bulletPointB, bulletPointC, indentedParagraph, invertedText
+    centeredHeader, text2, bulletPointA, bulletPointB, bulletPointC, indentedParagraph, invertedText, text2
 };
 
 foreach (var textElement in textElements)

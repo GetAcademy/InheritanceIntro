@@ -6,7 +6,7 @@ Videre på arv
 	- skal det være mulig å lage objekter av klassen TextElement eller ikke?
 	- abstrakt klasse vs interface
 	- generell vurdering
-		class VariantA : VariantB
+		class VariantA : VariantB - eks class BlinkingStar : StillStar
 		vs
 		class VariantA : BaseClass og class VariantB : BaseClass
 
