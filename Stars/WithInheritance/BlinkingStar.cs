@@ -1,25 +1,21 @@
 ﻿namespace Stars.WithInheritance
 {
-    internal class BlinkingStar : IStar
+    internal class BlinkingStar : Star
     {
-        private int _col;
-        private int _row;
         private int _phase;
 
-        public BlinkingStar(int col, int row)
+        public BlinkingStar(int col, int row) : base(col, row)
         {
-            _row = row;
-            _col = col;
         }
 
-        public void Show()
+        public override void Show()
         {
-            Console.SetCursorPosition(_col, _row);
+            base.Show();
             var c = _phase == 0 ? '*' : ' ';
             Console.Write(c);
         }
 
-        public void Update()
+        public override void Update()
         {
             _phase = _phase == 0 ? 1 : 0;
         }

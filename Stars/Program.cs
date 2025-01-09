@@ -1,10 +1,10 @@
-﻿
-using Stars.WithInheritance;
+﻿using Stars.WithInheritance;
 
 var star1 = new BlinkingStar(5, 5);
 var star2 = new MovingStar(1, 10);
+//var star3 = new Star(1, 10);
 
-var stars = new IStar[] { star1, star2 };
+var stars = new Star[] { star1, star2 };
 
 while (true)
 {

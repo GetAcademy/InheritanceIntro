@@ -1,23 +1,18 @@
 ﻿namespace Stars.WithInheritance
 {
-    internal class MovingStar : IStar
+    internal class MovingStar : Star
     {
-        private int _col;
-        private int _row;
-
-        public MovingStar(int col, int row)
+        public MovingStar(int col, int row) : base(col, row)
         {
-            _row = row;
-            _col = col;
         }
 
-        public void Show()
+        public override void Show()
         {
-            Console.SetCursorPosition(_col, _row);
+            base.Show();
             Console.Write('*');
         }
 
-        public void Update()
+        public override void Update()
         {
             _col = (_col + 1) % Console.WindowWidth;
         }

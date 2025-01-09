@@ -18,7 +18,7 @@ Videre på arv
 	- Discount: PercentageDiscount, FixedAmountDiscount, BuyOneGetOneFreeDiscount
 	- Ukene på Start IT
 
-4. Litt oppsummering av hele Start IT
+5. Litt om veien videre
 	- https://roadmap.sh/
 	- https://github.com/emilybache/GildedRose-Refactoring-Kata
 
