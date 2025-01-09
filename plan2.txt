@@ -12,7 +12,7 @@ Videre på arv
 
 3. Template method pattern
 	- TextElements
-	- Stars?
+	- Stars - både blinking og flytting
 
 4. Ev. flere eksempler på arv
 	- Discount: PercentageDiscount, FixedAmountDiscount, BuyOneGetOneFreeDiscount

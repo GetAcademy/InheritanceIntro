@@ -22,12 +22,6 @@
         public void Update()
         {
             _phase = _phase == 0 ? 1 : 0;
-            Terje();
-        }
-
-        public void Terje()
-        {
-
         }
     }
 }

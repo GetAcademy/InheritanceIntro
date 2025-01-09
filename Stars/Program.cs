@@ -9,7 +9,7 @@ var stars = new IStar[] { star1, star2 };
 while (true)
 {
     Console.Clear();
-    foreach (IStar star in stars)
+    foreach (var star in stars)
     {
         star.Update();
         star.Show();
