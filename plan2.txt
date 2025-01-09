@@ -11,6 +11,14 @@ Videre på arv
 		class VariantA : BaseClass og class VariantB : BaseClass
 
 3. Template method pattern
-	- TextElements.Show()
-	- 
+	- TextElements
+	- Stars?
+
+4. Ev. flere eksempler på arv
+	- Discount: PercentageDiscount, FixedAmountDiscount, BuyOneGetOneFreeDiscount
+	- Ukene på Start IT
+
+4. Litt oppsummering av hele Start IT
+	- https://roadmap.sh/
+	- https://github.com/emilybache/GildedRose-Refactoring-Kata
 
